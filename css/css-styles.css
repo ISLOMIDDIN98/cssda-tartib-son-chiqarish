@@ -1,0 +1,22 @@
+.main{
+  flex-grow: 1;
+}
+
+.new-movies-list{
+  display: flex;
+
+  justify-content: center;
+  counter-reset: good-movies;
+}
+
+.new-movies-item{
+  display: flex;
+  list-style: none;
+  counter-increment: good-movies;
+}
+
+.new-movies-item::before{
+  font-size: 48px;
+  font-weight: bold;
+content: counter(goog-movies);
+}
