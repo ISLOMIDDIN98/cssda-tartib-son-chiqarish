@@ -18,5 +18,5 @@
 .new-movies-item::before{
   font-size: 48px;
   font-weight: bold;
-content: counter(goog-movies);
+content: counter(good-movies);
 }
